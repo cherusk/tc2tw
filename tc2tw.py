@@ -37,6 +37,8 @@ class TW(object):
 
                 return fmt % _project
             else:
+                if _category:
+                    return fmt
                 return " "
 
         def compile_content(task):
